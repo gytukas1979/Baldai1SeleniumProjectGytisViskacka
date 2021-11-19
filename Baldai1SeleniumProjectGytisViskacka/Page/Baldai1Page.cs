@@ -28,9 +28,7 @@ namespace Baldai1SeleniumProjectGytisViskacka.Page
         private IWebElement NumberOfProductsInCartText => Driver.FindElement(By.ClassName("ty-minicart__amount"));
 
         public Baldai1Page(IWebDriver webdriver) : base(webdriver)
-        {
-            Driver.Url = PageAddress;
-        }
+        {}
 
         public Baldai1Page NavigateToDefaultPage()
         {

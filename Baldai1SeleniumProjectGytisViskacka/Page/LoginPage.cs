@@ -20,9 +20,7 @@ namespace Baldai1SeleniumProjectGytisViskacka.Page
         private IWebElement ButtonPrisijungtiLoginToPage => Driver.FindElement(By.CssSelector("#tygh_main_container > div.tygh-content.clearfix > div > div:nth-child(2) > div.span8.main-content-grid > div > div > div > form > div.buttons-container.clearfix > div:nth-child(3) > button"));
 
         public LoginPage(IWebDriver webdriver) : base(webdriver)
-        {
-            Driver.Url = PageAddress;
-        }
+        {}
 
         public LoginPage NavigateToDefaultPage()
         {
