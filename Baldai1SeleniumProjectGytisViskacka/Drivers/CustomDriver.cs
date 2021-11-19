@@ -36,9 +36,7 @@ namespace Baldai1SeleniumProjectGytisViskacka.Drivers
             }
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driver.Manage().Window.Maximize();
-
             return driver;
-
         }
     }
 }

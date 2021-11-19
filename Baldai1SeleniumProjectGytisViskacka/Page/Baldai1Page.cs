@@ -99,7 +99,6 @@ namespace Baldai1SeleniumProjectGytisViskacka.Page
             return this;
         }
 
-
         public Baldai1Page CheckSearchReachResult(string expectedResult)
         {
             Assert.IsTrue(ReturnedProductCode.Text.Contains(expectedResult), "Returned incorrect product");

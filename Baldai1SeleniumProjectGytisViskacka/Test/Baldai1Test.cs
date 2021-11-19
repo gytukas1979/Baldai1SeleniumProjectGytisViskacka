@@ -16,7 +16,7 @@ namespace Baldai1SeleniumProjectGytisViskacka.Test
     {
 
         [Order(1)]
-        [TestCase("Pakeisti I Email", "Pakeisti I passworda")]
+        [TestCase("Email", "Password")]
         public void TestLoginToPage(string emailAddress, string password)
         {
             _baldai1Page.NavigateToDefaultPage()

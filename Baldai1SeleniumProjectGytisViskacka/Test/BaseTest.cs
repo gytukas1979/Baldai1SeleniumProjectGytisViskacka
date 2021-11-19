@@ -22,8 +22,6 @@ namespace Baldai1.Test
         public static void SetUp()
         {
             driver = CustomDriver.GetChromeDriver();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.Manage().Window.Maximize();
             _baldai1Page = new Baldai1Page(driver);
             _loginPage = new LoginPage(driver);
             _cartPage = new CartPage(driver);
