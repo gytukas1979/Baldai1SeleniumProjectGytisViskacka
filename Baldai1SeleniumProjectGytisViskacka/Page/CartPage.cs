@@ -20,9 +20,7 @@ namespace Baldai1SeleniumProjectGytisViskacka.Page
         private IWebElement TextOfEmptyBasket => Driver.FindElement(By.CssSelector("#tygh_main_container > div.tygh-content.clearfix > div > div:nth-child(2) > div > div > div > p"));
         
         public CartPage(IWebDriver webdriver) : base(webdriver)
-        {
-            Driver.Url = PageAddress;
-        }
+        {}
 
         public CartPage NavigateToDefaultPage()
         {
