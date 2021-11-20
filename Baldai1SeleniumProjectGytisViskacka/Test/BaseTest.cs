@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Baldai1SeleniumProjectGytisViskacka.Drivers;
 using Baldai1SeleniumProjectGytisViskacka.Page;
+using Baldai1SeleniumProjectGytisViskacka.Tools;
 
 namespace Baldai1.Test
 {
@@ -27,19 +28,19 @@ namespace Baldai1.Test
             _cartPage = new CartPage(driver);
         }
 
-        //[TearDown]
+        [TearDown]
 
-        //public static void TakeScreenshot()
-        //{
-        //    if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
-        //        MyScreenshot.MakeScreenshot(driver);
-        //}
+        public static void TakeScreenshot()
+        {
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+                MyScreenshot.MakeScreenshot(driver);
+        }
 
         [OneTimeTearDown]
 
         public static void TearDown()
         {
-            //driver.Quit();
+            driver.Quit();
         }
     }
 }
