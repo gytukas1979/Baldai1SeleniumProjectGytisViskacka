@@ -18,7 +18,7 @@ namespace Baldai1SeleniumProjectGytisViskacka.Page
 
         public void CloseBrowser()
         {
-            // Driver.Quit();
+            Driver.Quit();
         }
     }
 }
